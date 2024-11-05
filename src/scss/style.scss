@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import '_vars';
+@import '_mixins';
+@import '_reset';
+@import '../../node_modules/swiper/swiper.min.css';
+
+html,
+body {
+  // scroll-behavior: smooth;
+}
+
+html {
+  // font-size: 62.5%;
+}
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  // font-optical-sizing: auto;
+}
+
+/*------------------ PAGES ------------------*/
+@import 'pages/page';
+@import 'pages/main';
+
+/*------------------ SECTIONS ------------------*/
+@import 'sections/header';
+@import 'sections/hero';
+@import 'sections/services';
+@import 'sections/about';
+@import 'sections/nums';
+@import 'sections/cta';
+@import 'sections/difference';
+@import 'sections/geography';
+@import 'sections/clients';
+@import 'sections/reviews';
+@import 'sections/faq';
+@import 'sections/news';
+@import 'sections/footer';
+
+/*------------------ BLOCKS ------------------*/
+@import 'blocks/container';
+@import 'blocks/logo';
+@import 'blocks/filials';
+@import 'blocks/nav';
+@import 'blocks/btn';
+@import 'blocks/bg';
+@import 'blocks/title';
+@import 'blocks/ru-map';
+@import 'blocks/stars';
+@import 'blocks/accordion';
+@import 'blocks/menu-block';
+@import 'blocks/socials';

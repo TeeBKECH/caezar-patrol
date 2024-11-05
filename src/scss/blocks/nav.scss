@@ -1,0 +1,31 @@
+.nav {
+  &_menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &_item {
+      font-size: 16px;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 650;
+      cursor: pointer;
+
+      &-text {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+
+    &_link {
+      display: inline-block;
+      color: inherit;
+      width: max-content;
+    }
+  }
+
+  &_submenu {
+    display: none;
+  }
+}

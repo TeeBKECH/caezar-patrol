@@ -1,0 +1,32 @@
+.header {
+  background: #fff;
+  padding: 22px 0 18px;
+  box-shadow: 0 2px 16px rgba(#18274b, 0.08), 0 4px 4px rgba(#18274b, 0.06);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &_block {
+    display: flex;
+    align-items: center;
+
+    &-left {
+      justify-content: flex-start;
+      gap: 68px;
+    }
+
+    &-right {
+      justify-content: flex-end;
+      gap: 48px;
+    }
+  }
+}

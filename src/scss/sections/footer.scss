@@ -1,0 +1,36 @@
+.footer {
+  background: #373940;
+  color: #fff;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_top {
+    padding: 68px 0 88px;
+
+    &_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 28px;
+
+      &_title {
+      }
+    }
+  }
+  &_copy {
+    border-top: 1px solid #5b5d68;
+    padding: 20px 0 24px;
+
+    &_links {
+      &_item {
+      }
+    }
+
+    &_link {
+      color: #fff;
+    }
+  }
+}

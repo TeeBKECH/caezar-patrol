@@ -1,0 +1,45 @@
+.btn {
+  display: inline-block;
+  width: fit-content;
+  color: #000;
+  line-height: 1;
+  font-family: 'Exo 2', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  transition: all 0.2s linear;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+
+  &-prime {
+    padding: 14px 18px;
+    font-size: 14px;
+    border: 2px solid #fdbc00;
+
+    &:hover {
+      background: #fdbc00;
+    }
+  }
+
+  &-second {
+    padding: 20px 24px;
+    font-size: 16px;
+    background: #ffc724;
+
+    &:hover {
+      background: #ffd556;
+    }
+  }
+
+  &-third {
+    padding: 16px 20px;
+    font-size: 14px;
+    color: #5b5d68;
+    border: 2px solid #e2e4ef;
+
+    &:hover {
+      background: #e2e4ef;
+    }
+  }
+}

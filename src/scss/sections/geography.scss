@@ -1,0 +1,9 @@
+.geography {
+  margin-bottom: 30px;
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+}

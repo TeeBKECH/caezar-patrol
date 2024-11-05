@@ -1,0 +1,24 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  &-dark {
+    color: #000;
+  }
+
+  &-white {
+    color: #fff;
+  }
+
+  &_img {
+  }
+
+  &_text {
+    color: inherit;
+    font-size: clamp(14px, 3vw, 18px);
+    font-weight: 750;
+    line-height: 1;
+  }
+}

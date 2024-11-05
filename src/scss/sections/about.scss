@@ -1,0 +1,53 @@
+.about {
+  margin-top: 30px;
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &_text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &_excerpt {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    p {
+      color: #5b5d68;
+      font-size: clamp(16px, 3vw, 20px);
+      font-weight: 500;
+      line-height: 1.6;
+    }
+  }
+
+  &_video {
+    width: 100%;
+    max-width: 768px;
+    height: 480px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &_placeholder {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
