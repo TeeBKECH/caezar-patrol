@@ -1,18 +1,27 @@
 .services {
   display: flex;
-  margin-bottom: 30px;
-
-  &_container {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-  }
 
   &_items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 40px;
+
+    @include maxWidth(1400px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: unset;
+      gap: 30px;
+    }
+
+    @include maxWidth(991px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    @include maxWidth(768px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 12px;
+    }
   }
 
   &_item {
@@ -25,16 +34,31 @@
     cursor: pointer;
     $service: &;
 
+    @include maxWidth(768px) {
+      padding: 20px;
+    }
+
     &_icon {
+      width: 60px;
+      height: 60px;
       margin-bottom: 40px;
+
+      @include maxWidth(768px) {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 20px;
+      }
+
       svg {
+        width: 100%;
+        height: 100%;
         fill: #ca0800;
       }
     }
 
     &_title {
       color: #373940;
-      font-size: clamp(18px, 3vw, 24px);
+      font-size: clamp(20px, 3vw, 24px);
       line-height: 1.15;
       font-weight: 700;
       margin-bottom: 32px;
@@ -47,10 +71,14 @@
 
     &_text {
       p {
-        font-size: 16px;
+        font-size: clamp(15px, 3vw, 16px);
         font-weight: 550;
         color: inherit;
         line-height: 1.8;
+
+        @include maxWidth(768px) {
+          line-height: 1.6;
+        }
       }
     }
 
@@ -59,13 +87,40 @@
       flex-wrap: wrap;
       gap: 20px 24px;
 
+      @include maxWidth(768px) {
+        gap: 16px;
+      }
+
       li {
-        font-size: 18px;
+        font-size: clamp(15px, 3vw, 18px);
       }
     }
 
     &_action {
       margin-top: auto;
+
+      @include maxWidth(768px) {
+        margin-top: 32px;
+      }
+    }
+
+    &-action {
+      border: 2px solid #11ab47;
+      #{$service}_icon {
+        svg {
+          fill: #11ab47;
+
+          path {
+            fill: #11ab47;
+          }
+        }
+      }
+
+      #{$service}_title {
+        @include maxWidth(768px) {
+          margin-bottom: 16px;
+        }
+      }
     }
 
     &-col {
@@ -74,6 +129,13 @@
       grid-row-start: 1;
       grid-row-end: 3;
       cursor: default;
+
+      @include maxWidth(768px) {
+        grid-column-start: unset;
+        grid-column-end: unset;
+        grid-row-start: unset;
+        grid-row-end: unset;
+      }
 
       #{$service}_title {
         line-height: 1.4;
@@ -85,17 +147,61 @@
       grid-column-end: 4;
       grid-row-start: 1;
       grid-row-end: 2;
+
+      @include maxWidth(991px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+
+      @include maxWidth(768px) {
+        grid-column-start: unset;
+        grid-column-end: unset;
+        grid-row-start: unset;
+        grid-row-end: unset;
+      }
     }
 
-    &:hover {
-      border-color: #11ab47;
-      #{$service}_icon {
-        svg {
-          fill: #11ab47 !important;
+    &-collapsed {
+      @include maxWidth(768px) {
+        display: grid;
+        grid-template-columns: 32px 1fr 14px;
+        align-items: center;
+        gap: 0 10px;
+      }
 
-          path {
-            fill: #11ab47 !important;
-          }
+      #{$service}_icon,
+      #{$service}_title {
+        @include maxWidth(768px) {
+          margin: 0;
+        }
+      }
+
+      #{$service}_title + svg {
+        display: none;
+        @include maxWidth(768px) {
+          display: block;
+        }
+      }
+
+      #{$service}_list {
+        @include maxWidth(768px) {
+          transition: all 0.1s linear;
+          opacity: 0;
+          visibility: hidden;
+          height: 0;
+          grid-column-start: 1;
+          grid-column-end: 4;
+        }
+      }
+
+      &.open {
+        #{$service}_list {
+          opacity: 1;
+          visibility: visible;
+          height: auto;
+          padding-top: 16px;
         }
       }
     }

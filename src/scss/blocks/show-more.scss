@@ -1,0 +1,44 @@
+.show-more {
+  &_text {
+    position: relative;
+    &.hide {
+      height: 510px;
+      overflow: hidden;
+      margin-bottom: 60px;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background: linear-gradient(
+          to top,
+          rgba(#fcfcfc, 1) 0%,
+          rgba(#fcfcfc, 0.9) 15%,
+          rgba(#fcfcfc, 0) 75%
+        );
+      }
+    }
+  }
+
+  &_btn {
+    display: none;
+    margin: 0 auto;
+    font-size: 14px;
+    border-bottom: 1px dashed #5b5d68;
+    color: #5b5d68;
+    font-weight: 700;
+    padding-bottom: 10px;
+    line-height: 1;
+    cursor: pointer;
+    width: fit-content;
+
+    &.show {
+      display: block;
+    }
+  }
+}

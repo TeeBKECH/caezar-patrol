@@ -1,6 +1,13 @@
 .page {
   padding-top: 86px;
   position: relative;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   background: #fcfcfc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  @include maxWidth(991px) {
+    padding-top: 60px;
+  }
 }

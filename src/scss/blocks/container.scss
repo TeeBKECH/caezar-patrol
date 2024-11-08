@@ -2,4 +2,14 @@
   width: clamp(348px, 100vw, 1632px);
   padding: 0 20px;
   margin: 0 auto;
+
+  &-col {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @include maxWidth(991px) {
+      gap: 24px;
+    }
+  }
 }

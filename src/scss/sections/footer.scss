@@ -1,14 +1,36 @@
 .footer {
   background: #373940;
   color: #fff;
+  margin-top: auto;
 
   &_container {
     display: flex;
     justify-content: space-between;
+
+    @include maxWidth(1200px) {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    @include maxWidth(768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px 20px;
+    }
+
+    &-copy {
+      @include maxWidth(768px) {
+        gap: 18px;
+      }
+    }
   }
 
   &_top {
     padding: 68px 0 88px;
+
+    @include maxWidth(768px) {
+      padding: 24px 0 40px;
+    }
 
     &_item {
       display: flex;
@@ -16,7 +38,37 @@
       justify-content: flex-start;
       gap: 28px;
 
-      &_title {
+      @include maxWidth(768px) {
+        align-items: center;
+      }
+
+      @include maxWidth(576px) {
+        align-items: flex-start;
+      }
+
+      &-hide-on-mob {
+        @include maxWidth(991px) {
+          display: none;
+        }
+      }
+
+      &-logo {
+        @include maxWidth(768px) {
+          justify-content: center;
+        }
+      }
+
+      &-socials {
+        @include maxWidth(768px) {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        @include maxWidth(576px) {
+          align-items: flex-end;
+        }
       }
     }
   }
@@ -24,13 +76,26 @@
     border-top: 1px solid #5b5d68;
     padding: 20px 0 24px;
 
+    &_text {
+      font-size: clamp(11px, 2vw, 14px);
+      color: #fff;
+    }
+
     &_links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 10px;
+
       &_item {
+        font-size: clamp(11px, 2vw, 14px);
+        color: #fff;
       }
     }
 
     &_link {
-      color: #fff;
+      color: inherit;
     }
   }
 }

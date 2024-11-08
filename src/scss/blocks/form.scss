@@ -1,0 +1,45 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @include maxWidth(576px) {
+    gap: 40px;
+  }
+
+  &_controls {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &_control {
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    border-bottom: 1px solid #5b5d68 !important;
+    color: #fff;
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: 500;
+    outline: none;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  input {
+    padding-bottom: 24px;
+
+    @include maxWidth(576px) {
+      padding-bottom: 16px;
+    }
+  }
+
+  textarea {
+    padding-bottom: 48px;
+  }
+}

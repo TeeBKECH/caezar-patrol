@@ -1,0 +1,29 @@
+.safety {
+  &_container {
+    @include maxWidth(768px) {
+      padding-right: 0;
+    }
+  }
+
+  &_grid {
+    @include maxWidth(768px) {
+      display: none;
+    }
+  }
+
+  &_swiper {
+    display: none;
+
+    @include maxWidth(768px) {
+      display: block;
+    }
+  }
+
+  &_actions {
+    display: none;
+
+    @include maxWidth(991px) {
+      display: flex;
+    }
+  }
+}

@@ -1,9 +1,11 @@
 .reviews {
-  margin-top: 30px;
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   gap: 48px;
+
+  @include maxWidth(991px) {
+    gap: 24px;
+  }
 
   &_container {
   }
@@ -16,42 +18,9 @@
 
   &_items {
     position: relative;
-  }
 
-  &_swiper {
-    width: 100%;
-
-    &_nav {
-      position: absolute;
-      top: 50%;
-      z-index: 2;
-      transform: translateY(-50%);
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 16px rgba(#18274b, 0.08), 0 4px 4px rgba(#18274b, 0.06);
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-
-      &.swiper-button-disabled {
-        cursor: default;
-        svg {
-          path {
-            fill: #f1f1f1 !important;
-          }
-        }
-      }
-
-      &-prev {
-        left: 0;
-      }
-
-      &-next {
-        right: 0;
-      }
+    @include maxWidth(991px) {
+      padding-right: 0;
     }
   }
 
@@ -65,16 +34,33 @@
     background: #fff;
     width: 100%;
 
+    @include maxWidth(1400px) {
+      padding: 48px 25px;
+    }
+
+    @include maxWidth(768px) {
+      grid-template-columns: 1fr;
+      padding: 24px 20px;
+    }
+
     &_content {
       display: flex;
       flex-direction: column;
       gap: 32px;
+
+      @include maxWidth(768px) {
+        gap: 16px;
+      }
     }
 
     &_head {
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      @include maxWidth(768px) {
+        gap: 16px;
+      }
     }
 
     &_name {
@@ -84,7 +70,7 @@
     }
 
     &_position {
-      font-size: 14px;
+      font-size: clamp(12px, 3vw, 14px);
       color: #5b5d68;
       font-weight: 600;
       text-transform: uppercase;
@@ -96,9 +82,13 @@
       gap: 12px;
 
       p {
-        font-size: clamp(16px, 3vw, 18px);
+        font-size: clamp(15px, 3vw, 18px);
         color: #5b5d68;
         line-height: 1.5;
+
+        @include maxWidth(768px) {
+          line-height: 1.6;
+        }
       }
     }
 
@@ -109,6 +99,18 @@
       justify-content: center;
       align-items: center;
       padding: 19px 11px;
+
+      @include maxWidth(768px) {
+        display: none;
+      }
+    }
+  }
+
+  &_actions {
+    display: none;
+
+    @include maxWidth(991px) {
+      display: flex;
     }
   }
 }

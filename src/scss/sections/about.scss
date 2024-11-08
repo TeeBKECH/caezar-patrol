@@ -1,26 +1,37 @@
 .about {
-  margin-top: 30px;
   &_container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 40px;
+
+    @include maxWidth(991px) {
+      flex-direction: column-reverse;
+    }
   }
 
   &_text {
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+    @include maxWidth(991px) {
+      gap: 32px;
+    }
   }
 
   &_excerpt {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @include maxWidth(991px) {
+      gap: 12px;
+    }
+
     p {
       color: #5b5d68;
-      font-size: clamp(16px, 3vw, 20px);
-      font-weight: 500;
+      font-size: clamp(15px, 3vw, 20px);
+      font-weight: 550;
       line-height: 1.6;
     }
   }
@@ -28,9 +39,12 @@
   &_video {
     width: 100%;
     max-width: 768px;
-    height: 480px;
     border-radius: 8px;
     overflow: hidden;
+
+    @include maxWidth(991px) {
+      max-width: unset;
+    }
 
     &_placeholder {
       position: relative;
@@ -47,6 +61,13 @@
         left: 50%;
         z-index: 2;
         transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+
+        @include maxWidth(991px) {
+          width: 48px;
+          height: 48px;
+        }
       }
     }
   }

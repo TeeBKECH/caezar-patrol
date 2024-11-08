@@ -4,5 +4,205 @@
 
   &-index {
     gap: 100px;
+
+    @include maxWidth(991px) {
+      gap: 0;
+    }
+
+    .hero {
+      @include maxWidth(991px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .services {
+      margin-bottom: 30px;
+    }
+
+    .about {
+      margin-top: 30px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .nums {
+      @include maxWidth(991px) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .cta {
+      margin-bottom: 30px;
+
+      @include maxWidth(991px) {
+        padding: 36px 0;
+        margin-top: 30px;
+      }
+
+      &-large {
+        margin-bottom: 0;
+        margin-top: 40px;
+      }
+    }
+
+    .geography {
+      margin-bottom: 30px;
+
+      @include maxWidth(991px) {
+        margin-top: 30px;
+      }
+    }
+
+    .clients,
+    .reviews,
+    .faq,
+    .difference {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .news {
+      margin-top: 30px;
+      margin-bottom: 40px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &-sectors {
+    gap: 80px;
+
+    @include maxWidth(991px) {
+      gap: 40px;
+    }
+
+    .safety {
+      @include maxWidth(991px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &-sector {
+    .seo {
+      margin-bottom: 120px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 60px;
+      }
+    }
+
+    .safety {
+      margin-bottom: 160px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 80px;
+      }
+    }
+  }
+
+  &-service {
+    .seo {
+      margin-bottom: 120px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 60px;
+      }
+    }
+
+    .safety {
+      margin-bottom: 160px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 60px;
+      }
+    }
+
+    .cta {
+      margin-top: 40px;
+      margin-bottom: 160px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 60px;
+      }
+
+      &-large {
+        margin-bottom: 0;
+
+        @include maxWidth(991px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .faq {
+      margin-bottom: 160px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 60px;
+      }
+    }
+
+    .serv {
+      margin-bottom: 160px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 60px;
+      }
+    }
+
+    .about {
+      margin-bottom: 100px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 60px;
+      }
+    }
+
+    .nums {
+      margin-bottom: 100px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 60px;
+      }
+    }
+
+    .difference {
+      margin-bottom: 110px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &-contacts {
+    .map {
+      margin-bottom: 80px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .geography {
+      margin-bottom: 120px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 60px;
+      }
+    }
+    .information {
+      margin-bottom: 165px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 40px;
+      }
+    }
   }
 }

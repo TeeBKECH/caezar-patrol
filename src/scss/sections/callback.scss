@@ -1,0 +1,66 @@
+.callback {
+  background: #373940;
+  padding: 120px 0;
+  border-bottom: 1px solid #5b5d68;
+
+  @include maxWidth(576px) {
+    padding: 48px 0 60px;
+  }
+
+  &_container {
+    align-items: center;
+  }
+
+  &_title {
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    h2 {
+      font-size: clamp(24px, 3vw, 40px);
+      font-weight: 700;
+      line-height: 1.2;
+
+      @include maxWidth(768px) {
+        line-height: 1.3;
+      }
+    }
+
+    p {
+      font-size: clamp(14px, 3vw, 20px);
+      font-weight: 550;
+      line-height: 1.4;
+
+      a {
+        color: inherit;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &_form {
+    width: 100%;
+    max-width: 776px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  &_notice {
+    text-align: center;
+    p {
+      color: #e2e4ef;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}

@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  $socials: &;
 
   &_item {
     display: flex;
@@ -11,5 +12,19 @@
     height: 40px;
     background: #5b5d68;
     border-radius: 50%;
+
+    @include maxWidth(768px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &-fs {
+    #{$socials}_item {
+      @include maxWidth(768px) {
+        width: 40px;
+        height: 40px;
+      }
+    }
   }
 }

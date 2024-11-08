@@ -11,6 +11,10 @@
     cursor: pointer;
     $item: &;
 
+    @include maxWidth(991px) {
+      padding: 16px 20px;
+    }
+
     &_head {
       display: flex;
       justify-content: space-between;
@@ -23,6 +27,10 @@
       font-size: clamp(16px, 3vw, 20px);
       font-weight: 500;
       line-height: 1;
+
+      @include maxWidth(991px) {
+        line-height: 1.25;
+      }
     }
 
     &_status {
@@ -33,6 +41,7 @@
       width: 16px;
       height: 16px;
       background: url(../img/svg/accordion_hidden_icon.svg) no-repeat;
+      flex: none;
     }
 
     &_content {

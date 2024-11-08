@@ -1,28 +1,57 @@
 .difference {
-  margin-top: 30px;
-  margin-bottom: 30px;
-
   &_container {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
+    @include maxWidth(991px) {
+      gap: 32px;
+    }
   }
 
   &_content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 512px 1fr;
     gap: 40px;
+
+    @include maxWidth(1400px) {
+      gap: 20px;
+    }
+
+    @include maxWidth(991px) {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    &-reverse {
+      grid-template-columns: 1fr 512px;
+
+      @include maxWidth(991px) {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
   }
 
   &_img {
     width: 100%;
-    max-width: 512px;
     border-radius: 8px;
     overflow: hidden;
+
+    @include maxWidth(450px) {
+      height: 240px;
+    }
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+
+      @include maxWidth(1400px) {
+        height: auto;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      @include maxWidth(450px) {
+        height: 100%;
+      }
     }
   }
 
@@ -30,12 +59,25 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px 40px;
+
+    @include maxWidth(1400px) {
+      gap: 60px 30px;
+    }
+
+    @include maxWidth(576px) {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
   }
 
   &_item {
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    @include maxWidth(576px) {
+      gap: 24px;
+    }
 
     &_count {
       color: #c1c2c9;
@@ -52,10 +94,14 @@
     }
 
     &_text {
-      font-size: clamp(16px, 3vw, 18px);
+      font-size: clamp(15px, 3vw, 18px);
       color: #5b5d68;
       font-weight: 550;
       line-height: 1.3;
+
+      @include maxWidth(576px) {
+        line-height: 1.6;
+      }
     }
   }
 }

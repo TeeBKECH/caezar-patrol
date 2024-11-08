@@ -24,8 +24,9 @@
 
   &-second {
     padding: 20px 24px;
-    font-size: 16px;
+    font-size: clamp(14px, 3vw, 16px);
     background: #ffc724;
+    border: 2px solid transparent;
 
     &:hover {
       background: #ffd556;
@@ -34,12 +35,46 @@
 
   &-third {
     padding: 16px 20px;
-    font-size: 14px;
+    font-size: clamp(12px, 3vw, 14px);
     color: #5b5d68;
     border: 2px solid #e2e4ef;
+
+    @include maxWidth(768px) {
+      padding: 14px;
+    }
 
     &:hover {
       background: #e2e4ef;
     }
+  }
+
+  &-glass {
+    padding: 20px 24px;
+    font-size: clamp(14px, 3vw, 14px);
+    color: #fff;
+    border: 2px solid #fff;
+
+    @include maxWidth(768px) {
+      padding: 14px;
+    }
+
+    &:hover {
+      background: #e2e4ef;
+      color: #000;
+    }
+  }
+
+  &-sm {
+    padding: 16px 20px;
+  }
+  &-md {
+    padding: 20px 24px;
+  }
+  &-lg {
+  }
+
+  &-fw {
+    width: 100%;
+    text-align: center;
   }
 }

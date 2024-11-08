@@ -18,6 +18,27 @@ body {
   // font-optical-sizing: auto;
 }
 
+/*------------------ BLOCKS ------------------*/
+@import 'blocks/container';
+@import 'blocks/swiper';
+@import 'blocks/logo';
+@import 'blocks/filials';
+@import 'blocks/nav';
+@import 'blocks/btn';
+@import 'blocks/bg';
+@import 'blocks/title';
+@import 'blocks/ru-map';
+@import 'blocks/stars';
+@import 'blocks/accordion';
+@import 'blocks/menu-block';
+@import 'blocks/socials';
+@import 'blocks/burger';
+@import 'blocks/breadcrumbs';
+@import 'blocks/grid';
+@import 'blocks/show-more';
+@import 'blocks/content';
+@import 'blocks/form';
+
 /*------------------ PAGES ------------------*/
 @import 'pages/page';
 @import 'pages/main';
@@ -36,17 +57,9 @@ body {
 @import 'sections/faq';
 @import 'sections/news';
 @import 'sections/footer';
-
-/*------------------ BLOCKS ------------------*/
-@import 'blocks/container';
-@import 'blocks/logo';
-@import 'blocks/filials';
-@import 'blocks/nav';
-@import 'blocks/btn';
-@import 'blocks/bg';
-@import 'blocks/title';
-@import 'blocks/ru-map';
-@import 'blocks/stars';
-@import 'blocks/accordion';
-@import 'blocks/menu-block';
-@import 'blocks/socials';
+@import 'sections/intro';
+@import 'sections/safety';
+@import 'sections/seo';
+@import 'sections/map';
+@import 'sections/information';
+@import 'sections/callback';

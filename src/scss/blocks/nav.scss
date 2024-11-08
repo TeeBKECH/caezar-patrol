@@ -29,3 +29,34 @@
     display: none;
   }
 }
+
+@media only screen and (max-width: 1550px) {
+  .nav {
+    &_menu {
+      gap: 26px;
+
+      &_item {
+        &-text {
+        }
+      }
+
+      &_link {
+      }
+    }
+
+    &_submenu {
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav {
+    &_menu {
+      gap: 15px;
+
+      &_item {
+        font-size: 14px;
+      }
+    }
+  }
+}

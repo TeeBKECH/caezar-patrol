@@ -1,17 +1,15 @@
 .clients {
-  margin-top: 30px;
-  margin-bottom: 30px;
-
   &_container {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
+    @include maxWidth(991px) {
+      gap: 16px;
+      padding-right: 0;
+    }
   }
 
   &_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include maxWidth(991px) {
+      padding-right: 20px;
+    }
   }
 
   &_items {
@@ -19,9 +17,38 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+
+    @include maxWidth(991px) {
+      gap: 20px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: flex-start;
+    }
   }
 
   &_item {
     filter: grayscale(1);
+
+    @include maxWidth(991px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+    }
+
+    img {
+      @include maxWidth(991px) {
+        max-width: 140px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &_actions {
+    display: none;
+
+    @include maxWidth(991px) {
+      display: flex;
+    }
   }
 }
