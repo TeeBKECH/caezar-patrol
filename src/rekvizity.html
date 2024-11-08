@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/style.min.css"
+    />
+    <title>Реквизиты | Цезарь Сателлит</title>
+  </head>
+  <body>
+    <div class="page page-info">
+      <header class="header">
+        <div class="container header_container">
+          <div class="header_block header_block-left">
+            <a
+              href="index.html"
+              class="logo logo-dark"
+            >
+              <img
+                class="logo_img"
+                src="assets/img/svg/logo.svg"
+                alt="Цезарь Сателлит"
+              />
+              <span class="logo_text">Цезарь<br />Патруль</span>
+            </a>
+            <div class="filials">
+              <div class="filials_item">
+                <svg
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.39658 0C5.14886 0 2.50635 2.64251 2.50635 5.89056C2.50635 6.73777 2.67975 7.54667 3.02149 8.29499C4.49421 11.5176 7.31783 14.9201 8.14834 15.886C8.17913 15.9217 8.21726 15.9504 8.26012 15.97C8.30299 15.9897 8.34959 15.9998 8.39674 15.9998C8.44389 15.9998 8.49049 15.9897 8.53336 15.97C8.57622 15.9504 8.61435 15.9217 8.64514 15.886C9.47533 14.9203 12.2989 11.518 13.7722 8.29499C14.1141 7.54667 14.2873 6.73777 14.2873 5.89056C14.287 2.64251 11.6445 0 8.39658 0ZM8.39658 8.95013C6.70951 8.95013 5.33684 7.57746 5.33684 5.89039C5.33684 4.20317 6.70951 2.83049 8.39658 2.83049C10.0836 2.83049 11.4563 4.20317 11.4563 5.89039C11.4565 7.57746 10.0838 8.95013 8.39658 8.95013Z"
+                    fill="#CA0800"
+                  />
+                </svg>
+                <span class="filials_item_text">Москва</span>
+                <svg
+                  width="8"
+                  height="6"
+                  viewBox="0 0 8 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.0466659 0.745022L3.86978 5.53775C3.93301 5.61687 4.06672 5.61687 4.12995 5.53775L7.95348 0.744689C7.99899 0.687365 8.01247 0.601918 7.98793 0.527538C7.98385 0.514985 7.97867 0.502818 7.97245 0.491179C7.9582 0.464632 7.93702 0.442444 7.91116 0.426974C7.8853 0.411503 7.85574 0.403329 7.8256 0.40332H0.174128C0.112893 0.40332 0.0564835 0.437016 0.02753 0.491179C0.0213888 0.502518 0.0162658 0.514379 0.0122212 0.526623C-0.0124892 0.601918 0.000906017 0.687531 0.0466659 0.745022Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+              <div class="filials_item">
+                <svg
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2794 12.8229L12.9449 9.48854C12.8712 9.4149 12.7713 9.37354 12.6672 9.37354C12.5631 9.37354 12.4632 9.4149 12.3895 9.48854L10.6378 11.2403C10.1615 11.1087 8.89577 10.6454 7.43948 9.18964C5.92859 7.67858 5.31642 6.17247 5.16458 5.74656L6.90606 4.00507C6.94259 3.96863 6.97157 3.92533 6.99134 3.87767C7.01112 3.83001 7.02129 3.77892 7.02129 3.72732C7.02129 3.67572 7.01112 3.62463 6.99134 3.57697C6.97157 3.52931 6.94259 3.48602 6.90606 3.44957L3.57151 0.115017C3.49784 0.0413714 3.39793 0 3.29376 0C3.18959 0 3.08968 0.0413714 3.01601 0.115017L1.06687 2.06432C1.04163 2.08949 1.01998 2.118 1.00251 2.14906L0.998912 2.15317C-0.552899 4.06037 1.00045 8.32361 4.53564 11.859C7.0514 14.3746 10.0996 16 12.3015 16C13.0876 16 13.7349 15.8009 14.226 15.408L14.2719 15.3765C14.2919 15.363 14.3104 15.3475 14.3274 15.3303L16.2794 13.3783C16.353 13.3046 16.3943 13.2047 16.3943 13.1006C16.3943 12.9965 16.353 12.8966 16.2794 12.8229Z"
+                    fill="black"
+                  />
+                </svg>
+                <span class="filials_item_text">+7 (495) 127-38-51</span>
+                <svg
+                  width="8"
+                  height="6"
+                  viewBox="0 0 8 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.0466659 0.745022L3.86978 5.53775C3.93301 5.61687 4.06672 5.61687 4.12995 5.53775L7.95348 0.744689C7.99899 0.687365 8.01247 0.601918 7.98793 0.527538C7.98385 0.514985 7.97867 0.502818 7.97245 0.491179C7.9582 0.464632 7.93702 0.442444 7.91116 0.426974C7.8853 0.411503 7.85574 0.403329 7.8256 0.40332H0.174128C0.112893 0.40332 0.0564835 0.437016 0.02753 0.491179C0.0213888 0.502518 0.0162658 0.514379 0.0122212 0.526623C-0.0124892 0.601918 0.000906017 0.687531 0.0466659 0.745022Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="header_block header_block-right">
+            <nav class="nav">
+              <ul class="nav_menu">
+                <li class="nav_menu_item">
+                  <a
+                    class="nav_menu_link"
+                    href="about.html"
+                    >О компании</a
+                  >
+                </li>
+                <li class="nav_menu_item">
+                  <a
+                    class="nav_menu_link"
+                    href="sectors.html"
+                    >Секторы</a
+                  >
+                </li>
+                <li class="nav_menu_item">
+                  <a
+                    class="nav_menu_link"
+                    href="#"
+                    >Услуги</a
+                  >
+                </li>
+                <li class="nav_menu_item">
+                  <a
+                    class="nav_menu_link"
+                    href="#"
+                    >Кейсы</a
+                  >
+                </li>
+                <li class="nav_menu_item nav_menu_item-text">
+                  <span
+                    class="nav_menu_link nav_menu_link-text"
+                    href="#"
+                    >Клиентам</span
+                  >
+                  <svg
+                    width="8"
+                    height="6"
+                    viewBox="0 0 8 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.0466659 0.745022L3.86978 5.53775C3.93301 5.61687 4.06672 5.61687 4.12995 5.53775L7.95348 0.744689C7.99899 0.687365 8.01247 0.601918 7.98793 0.527538C7.98385 0.514985 7.97867 0.502818 7.97245 0.491179C7.9582 0.464632 7.93702 0.442444 7.91116 0.426974C7.8853 0.411503 7.85574 0.403329 7.8256 0.40332H0.174128C0.112893 0.40332 0.0564835 0.437016 0.02753 0.491179C0.0213888 0.502518 0.0162658 0.514379 0.0122212 0.526623C-0.0124892 0.601918 0.000906017 0.687531 0.0466659 0.745022Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <ul class="nav_submenu">
+                    <li class="nav_submenu_item">
+                      <a
+                        class="nav_submenu_link"
+                        href="#"
+                        >Пункт 1</a
+                      >
+                    </li>
+                    <li class="nav_submenu_item">
+                      <a
+                        class="nav_submenu_link"
+                        href="#"
+                        >Пункт 2</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav_menu_item">
+                  <a
+                    class="nav_menu_link"
+                    href="contacts.html"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <button class="btn btn-prime">Связаться с нами</button>
+          </div>
+          <div class="header_block header_block-mob">
+            <a
+              href="#"
+              class="header_block_phone"
+            >
+              <svg
+                width="20"
+                height="21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.854 16.105l-4.168-4.168a.491.491 0 00-.695 0l-2.19 2.19c-.595-.165-2.177-.744-3.997-2.564C6.915 9.674 6.15 7.792 5.96 7.26l2.177-2.176a.49.49 0 000-.695L3.969.22a.491.491 0 00-.695 0L.838 2.657a.486.486 0 00-.08.106l-.005.005c-1.94 2.384.002 7.713 4.42 12.132 3.146 3.144 6.956 5.176 9.708 5.176.983 0 1.792-.249 2.406-.74l.057-.04a.461.461 0 00.07-.057l2.44-2.44a.491.491 0 000-.694z"
+                  fill="#5B5D68"
+                />
+              </svg>
+            </a>
+            <div class="burger">
+              <span class="burger_item"></span>
+              <span class="burger_item"></span>
+              <span class="burger_item"></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main main-info">
+
+        <!-- Section Intro -->
+        <section class="intro intro-type2">
+          <div class="container intro_container">
+            <div class="breadcrumbs">
+              <a href="index.html" class="breadcrumbs_link">Главная</a>
+              <span class="breadcrumbs_sep">/</span>
+              <span class="breadcrumbs_text">Реквизиты</span>
+            </div>
+            <div class="intro_content">
+              <h1 class="intro_title">Реквизиты</h1>
+            </div> 
+          </div>
+        </section>
+        <!-- ./ Section Intro -->
+
+        <!-- Section Information -->
+        <section class="information information-type2">
+          <div class="container container-col information_container">
+            <div class="content content-ws">
+              <div class="content_block">
+                <div class="information_parts">
+                  <ul class="information_part">
+                    <li class="information_part_item">
+                      <span>Полное наименование фирмы (в соответствии с учредительными документами)</span>
+                      <p>АО «Цезарь Сателлит»</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>Юридический адрес</span>
+                      <p>121170, г. Москва, Внутригородская территория города Федерального значения, Муниципальный округ Дорогомилово, ул. Поклонная, д. 3, корпус 4, эт. 3, ком. 18</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>Почтовый адрес</span>
+                      <p>121170, г. Москва, а/я 43</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>Фактический адрес</span>
+                      <p>141400, Московская область, городской округ Химки, ул. Ленинградская, д.29</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>Генеральный директор</span>
+                      <p>Каковкин Илья Геннадьевич</p>
+                    </li>
+                  </ul>
+                  <ul class="information_part">
+                    <li class="information_part_item">
+                      <span>Идентификационный номер (ИНН/КПП)</span>
+                      <p>7704191876 / 773001001</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>Расчетный счет</span>
+                      <p>40702810605800001150</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>Корреспондентский счет</span>
+                      <p>30101810145250000411</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>БИК</span>
+                      <p>044525411</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>Полное наименование банка</span>
+                      <p>Филиал «Центральный» Банка ВТБ (ПАО) в г. Москве</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>ОГРН</span>
+                      <p>1027700346574</p>
+                    </li>
+                  </ul>
+                  <ul class="information_part">
+                    <li class="information_part_item">
+                      <span>ОКПО</span>
+                      <p>88541123</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>ОКТМО</span>
+                      <p>36701335000</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>ОКОГУ</span>
+                      <p>4210014</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>ОКОГУ</span>
+                      <p>4210014</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>ОКАТО</span>
+                      <p>45268554000</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>ОКВЭД</span>
+                      <p>52.23<br />43.21, 45.20.1, 45.20.2, 45.3, 52.21.1, 62.01, 62.02, 62.09, 63.11, 63.11.1, 79.11, 79.90.1, 79.90.2, 79.90.3, 96.09</p>
+                    </li>
+                    <li class="information_part_item">
+                      <span>ОКОФС/ОКОПФ</span>
+                      <p>16/30002</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="information_widget  content_widget">
+                <div class="information_widget_icon">
+                  <svg width="60" height="53" viewBox="0 0 60 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M41.4375 13.4688L29.3438 1.65625C28.6875 1 27.6563 0.53125 26.625 0.53125H10.5C4.96875 0.53125 0.46875 5.03125 0.46875 10.5625V42.4375C0.46875 47.9688 4.96875 52.4688 10.5 52.4688H20.3438C19.5938 51.5312 19.125 50.3125 18.9375 49.0938H10.5C6.84375 49.0938 3.9375 46.0938 3.9375 42.5312V10.5625C3.9375 6.90625 6.9375 4 10.5 4H26.625C26.7188 4 26.8125 4 26.9063 4.09375L27 4.1875V9.53125C27.0938 10.1875 27.2813 10.9375 27.5625 11.5938C28.6875 14.0312 31.0313 15.8125 33.75 16.1875C34.0313 16.1875 34.4063 16.2812 34.6875 16.2812L39.2813 16.4688C39.375 16.6562 39.375 16.75 39.375 16.9375V30.3438H42.75V16.75C42.8438 15.5312 42.2813 14.3125 41.4375 13.4688Z" fill="#CA0800"/>
+                    <path d="M32.4375 40.1875C32.5312 40.375 32.625 40.5625 32.625 40.8438C32.625 41.4063 32.4375 41.7812 32.0625 42.0625C31.6875 42.25 31.125 42.3438 30.2812 42.3438H29.5312V39.4375H30.375C30.6563 39.4375 31.0312 39.4375 31.2187 39.5313C31.5 39.625 31.6875 39.625 31.875 39.7187C32.1562 39.9062 32.3437 40 32.4375 40.1875Z" fill="#CA0800"/>
+                    <path d="M42.1875 40.2813C41.625 39.7188 40.875 39.4375 39.75 39.4375H38.8125V45.7188H39.6562C40.7812 45.7188 41.625 45.4375 42.1875 44.875C42.75 44.3125 43.0313 43.5625 43.0313 42.5312C43.0313 41.5937 42.75 40.8438 42.1875 40.2813ZM42.1875 40.2813C41.625 39.7188 40.875 39.4375 39.75 39.4375H38.8125V45.7188H39.6562C40.7812 45.7188 41.625 45.4375 42.1875 44.875C42.75 44.3125 43.0313 43.5625 43.0313 42.5312C43.0313 41.5937 42.75 40.8438 42.1875 40.2813ZM55.2188 32.875H25.9688C23.625 32.875 21.6562 34.75 21.6562 37.1875V48.1562C21.6562 50.5 23.5313 52.4688 25.9688 52.4688H55.2188C57.5625 52.4688 59.5313 50.5 59.5313 48.1562V37.1875C59.5313 34.8438 57.5625 32.875 55.2188 32.875ZM33.75 43.5625C32.9062 44.125 31.7812 44.4062 30.2812 44.4062H29.5312V46.6563C29.5312 47.3125 29.0625 47.7813 28.4062 47.7813C27.75 47.7813 27.2813 47.3125 27.2813 46.6563V38.3125C27.2813 38.125 27.4688 37.9375 27.6562 37.9375C28.0312 37.8438 28.4062 37.8437 28.875 37.8437C29.4375 37.8437 29.9062 37.75 30.2812 37.75C31.7812 37.75 32.9062 38.0312 33.75 38.5C34.5938 39.0625 34.9688 39.9063 34.9688 41.0313C34.875 42.1563 34.5 43 33.75 43.5625ZM44.9063 44.9688C44.625 45.625 44.25 46.1875 43.7813 46.5625C43.3125 46.9375 42.6562 47.3125 42 47.5C41.25 47.6875 40.5 47.7813 39.5625 47.7813C39.1875 47.7813 38.7188 47.7812 38.1563 47.6875C37.6875 47.6875 37.3125 47.5938 36.9375 47.5C36.75 47.5 36.5625 47.3125 36.5625 47.125V38.125C36.5625 37.9375 36.75 37.75 36.9375 37.75C37.3125 37.6563 37.7812 37.6563 38.25 37.6563C38.8125 37.6563 39.2812 37.5625 39.6562 37.5625C40.5 37.5625 41.25 37.6562 42 37.8437C42.6562 38.0312 43.3125 38.3125 43.7813 38.7812C44.25 39.1562 44.625 39.7188 44.9063 40.375C45.1875 41.0312 45.2812 41.7812 45.2812 42.7188C45.2812 43.5625 45.1875 44.3125 44.9063 44.9688ZM52.875 39.5313H49.4063V41.5937H52.4063C52.9688 41.5937 53.3438 41.9687 53.3438 42.5312C53.3438 43.0937 52.875 43.4687 52.4063 43.4687H49.4063V46.4688C49.4063 47.125 48.9375 47.5938 48.2813 47.5938C47.625 47.5938 47.1562 47.125 47.1562 46.4688V38.0312C47.1562 37.8438 47.3438 37.6563 47.5313 37.6563H52.875C53.4375 37.6563 53.8125 38.125 53.8125 38.5938C53.8125 39.1563 53.4375 39.5313 52.875 39.5313ZM39.75 39.5313H38.8125V45.8125H39.6562C40.7812 45.8125 41.625 45.5313 42.1875 44.9688C42.75 44.4063 43.0313 43.6563 43.0313 42.625C43.0313 41.5938 42.75 40.75 42.2812 40.2813C41.7188 39.7188 40.875 39.5313 39.75 39.5313Z" fill="#CA0800"/>
+                    </svg>
+                </div>
+                <div class="information_widget_text">Скачать реквизиты</div>
+                <a href="#" download class="btn btn-prime btn-fw">Скачать</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ./ Section Information -->
+
+        <!-- Section CTA Large -->
+        <section class="callback">
+          <div class="container container-col callback_container">
+            <div class="callback_title">
+              <h2>Обратная связь</h2>
+              <p>
+                Оставьте заявку на нашем сайте или позвоните по телефону
+                <a href="tel:+74951273851">+7 (495) 127-38-51</a>
+              </p>
+            </div>
+            <div class="callback_form">
+              <form class="form" action="#" method="post" name="cb">
+                <div class="form_controls">
+                  <div class="form_control">
+                    <input type="text" placeholder="Имя" name="name">
+                  </div>
+                  <div class="form_control">
+                    <input type="text" placeholder="+7 (999) 999 99 99" name="phone">
+                  </div>
+                  <div class="form_control">
+                    <input type="email" placeholder="E-mail" name="email">
+                  </div>
+                  <div class="form_control">
+                    <textarea name="comment" placeholder="Собщение"></textarea>
+                  </div>
+                </div>
+                <div class="form_actions">
+                  <button type="submit" class="btn btn-glass btn-fw">Отправить</button>
+                </div>
+              </form>
+              <div class="callback_notice">
+                <p>Нажимая кнопку «Отправить», я подтверждаю согласие на обработку моих персональных данных
+                  (закон №152-ФЗ «О персональных данных») и соглашаюсь с <a href="#">политикой конфиденциальности</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ./ Section CTA Large -->
+
+      </main>
+      
+      <footer class="footer">
+        <div class="footer_top">
+          <div class="container footer_container">
+            <div class="footer_top_item footer_top_item-logo">
+              <a
+                href="#"
+                class="logo logo-white"
+              >
+                <img
+                  class="logo_img"
+                  src="assets/img/svg/logo.svg"
+                  alt="Цезарь Сателлит"
+                />
+                <span class="logo_text">Цезарь<br />Патруль</span>
+              </a>
+            </div>
+            <div class="footer_top_item">
+              <nav class="menu-block">
+                <div class="menu-block_title">О компании</div>
+                <ul class="menu-block_items">
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >О нас</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Отзывы</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Кейсы</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Вакансии</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Документы</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer_top_item footer_top_item-hide-on-mob">
+              <nav class="menu-block">
+                <div class="menu-block_title">Клиентам</div>
+                <ul class="menu-block_items">
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Программа лояльности</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Акции</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Частые вопросы</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Оплата</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Новости</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer_top_item footer_top_item-hide-on-mob">
+              <nav class="menu-block">
+                <div class="menu-block_title">Сектора</div>
+                <ul class="menu-block_items">
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Бизнес-центры</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Складские комплексы</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Строительные обьекты</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Промышленность</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <a
+                      class="menu-block_link"
+                      href="#"
+                      >Массовые мероприятия</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer_top_item">
+              <nav class="menu-block">
+                <div class="menu-block_title">Контакты</div>
+                <ul class="menu-block_items menu-block_items-m">
+                  <li class="menu-block_item">
+                    <svg
+                      width="17"
+                      height="16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.362 12.823l-3.334-3.334a.393.393 0 00-.556 0l-1.751 1.751c-.476-.131-1.742-.595-3.199-2.05C6.012 7.679 5.4 6.172 5.248 5.747l1.741-1.742a.392.392 0 000-.555L3.655.115a.393.393 0 00-.556 0l-1.95 1.95a.389.389 0 00-.063.084l-.004.004c-1.552 1.907.001 6.17 3.537 9.706C7.134 14.375 10.183 16 12.384 16c.787 0 1.434-.2 1.925-.592l.046-.031a.366.366 0 00.055-.047l1.952-1.952a.393.393 0 000-.555z"
+                        fill="#fff"
+                      />
+                    </svg>
+                    <a
+                      class="menu-block_link menu-block_link-m"
+                      href="tel:+74951273851"
+                      >+7 (495) 127-38-51</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <svg
+                      width="17"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.147.847H.812a.332.332 0 00-.333.333v9.64a.332.332 0 00.333.332h15.335a.332.332 0 00.333-.332V1.18a.333.333 0 00-.333-.333zm-.554 2.941a.249.249 0 01-.13.219L8.601 7.765a.25.25 0 01-.24 0L1.496 4.007a.25.25 0 01-.13-.219V2.533a.25.25 0 01.365-.22l6.596 3.45a.347.347 0 00.308 0l6.593-3.45a.25.25 0 01.365.22v1.255z"
+                        fill="#fff"
+                      />
+                    </svg>
+                    <a
+                      class="menu-block_link menu-block_link-m"
+                      href="mailto:info@csat.ru"
+                      >info@csat.ru</a
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <svg
+                      width="15"
+                      height="14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.48.333A6.667 6.667 0 1014.145 7 6.674 6.674 0 007.479.333zM9.847 8.93L7.18 7.597A.667.667 0 016.812 7V3.667a.667.667 0 111.334 0v2.92l2.298 1.15a.667.667 0 11-.596 1.193z"
+                        fill="#fff"
+                      />
+                    </svg>
+                    <span class="menu-block_link menu-block_link-m menu-block_link-text"
+                      >9:00-19:00</span
+                    >
+                  </li>
+                  <li class="menu-block_item">
+                    <svg
+                      width="13"
+                      height="16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.48 0A5.897 5.897 0 00.588 5.89c0 .848.173 1.657.515 2.405 1.473 3.223 4.296 6.625 5.127 7.591a.328.328 0 00.497 0c.83-.966 3.654-4.368 5.127-7.591a5.743 5.743 0 00.515-2.404A5.898 5.898 0 006.48 0zm0 8.95a3.063 3.063 0 01-3.06-3.06 3.063 3.063 0 013.06-3.06 3.063 3.063 0 013.059 3.06 3.063 3.063 0 01-3.06 3.06z"
+                        fill="#fff"
+                      />
+                    </svg>
+                    <a
+                      class="menu-block_link menu-block_link-m"
+                      href="#"
+                      >Москва, Тестовая, 31</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer_top_item footer_top_item-socials">
+              <div class="socials">
+                <a
+                  href="#"
+                  class="socials_item"
+                  ><svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.65 12.713c-4.97 0-7.804-3.407-7.922-9.077h2.489c.082 4.162 1.917 5.924 3.37 6.287V3.636h2.345v3.59c1.435-.155 2.943-1.79 3.452-3.59h2.344c-.39 2.217-2.026 3.853-3.19 4.525 1.164.545 3.026 1.971 3.735 4.552h-2.58c-.554-1.727-1.935-3.062-3.761-3.244v3.244H8.65z"
+                      fill="#fff"
+                    /></svg
+                ></a>
+                <a
+                  href="#"
+                  class="socials_item"
+                  ><svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M.99 7.11c3.865-1.806 6.443-2.997 7.733-3.572C12.405 1.895 13.17 1.61 13.669 1.6c.11-.002.355.027.514.166a.614.614 0 01.188.385c.018.11.04.363.023.56-.2 2.248-1.063 7.706-1.503 10.225-.185 1.065-.552 1.423-.906 1.458-.77.076-1.355-.546-2.1-1.07-1.167-.821-1.827-1.332-2.96-2.132-1.309-.926-.46-1.434.286-2.266C7.406 8.71 10.8 5.4 10.865 5.1c.008-.038.016-.178-.062-.252-.078-.074-.192-.048-.275-.028-.117.028-1.98 1.35-5.593 3.965-.529.39-1.008.58-1.437.57-.474-.011-1.385-.287-2.062-.524-.83-.29-1.49-.442-1.433-.934.03-.256.36-.518.987-.786z"
+                      fill="#fff"
+                    /></svg
+                ></a>
+                <a
+                  href="#"
+                  class="socials_item"
+                  ><svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_44_140)">
+                      <path
+                        d="M8.002 0h-.004C3.587 0 0 3.588 0 8a7.94 7.94 0 001.523 4.689l-.997 2.972 3.075-.983A7.93 7.93 0 008.002 16C12.413 16 16 12.411 16 8s-3.587-8-7.998-8zm4.655 11.297c-.193.545-.959.997-1.57 1.129-.418.089-.964.16-2.802-.602-2.351-.974-3.865-3.363-3.983-3.518-.113-.155-.95-1.265-.95-2.413s.583-1.707.818-1.947c.193-.197.512-.287.818-.287.099 0 .188.005.268.009.235.01.353.024.508.395.193.465.663 1.613.719 1.731.057.118.114.278.034.433-.075.16-.141.231-.259.367-.118.136-.23.24-.348.386-.108.127-.23.263-.094.498.136.23.606.997 1.298 1.613.893.795 1.617 1.049 1.876 1.157.193.08.423.061.564-.089.179-.193.4-.513.625-.828.16-.226.362-.254.574-.174.216.075 1.359.64 1.594.757.235.118.39.174.447.273.056.099.056.564-.137 1.11z"
+                        fill="#fff"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_44_140">
+                        <path
+                          fill="#fff"
+                          d="M0 0h16v16H0z"
+                        />
+                      </clipPath>
+                    </defs></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_copy">
+          <div class="container footer_container footer_container-copy">
+            <p class="footer_copy_text">2013 — 2024 «Цезарь Сателлит»</p>
+            <ul class="footer_copy_links">
+              <li class="footer_copy_links_item">
+                <a
+                  class="footer_copy_link"
+                  href="#"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>

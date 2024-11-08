@@ -26,6 +26,7 @@
     align-items: center;
     gap: 40px;
     background: #fff;
+    border-radius: 8px;
 
     @include maxWidth(1200px) {
       padding: 48px 20px;
