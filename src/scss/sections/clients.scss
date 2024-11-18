@@ -42,6 +42,10 @@
         object-fit: contain;
       }
     }
+
+    &:hover {
+      filter: grayscale(0);
+    }
   }
 
   &_actions {

@@ -1,0 +1,9 @@
+.serv {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @include maxWidth(991px) {
+    gap: 24px;
+  }
+}

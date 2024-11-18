@@ -25,7 +25,7 @@
     />
     <title>Контакты | Цезарь Сателлит</title>
   </head>
-  <body>
+  <body class="body">
     <div class="page page-contacts">
       <header class="header">
         <div class="container header_container">
@@ -42,7 +42,7 @@
               <span class="logo_text">Цезарь<br />Патруль</span>
             </a>
             <div class="filials">
-              <div class="filials_item">
+              <div class="filials_item" data-dropdown-trigger="filials" data-dropdown-type="click">
                 <svg
                   width="17"
                   height="16"
@@ -69,7 +69,7 @@
                   />
                 </svg>
               </div>
-              <div class="filials_item">
+              <div class="filials_item" data-dropdown-trigger="banner">
                 <svg
                   width="17"
                   height="16"
@@ -118,21 +118,20 @@
                 <li class="nav_menu_item">
                   <a
                     class="nav_menu_link"
-                    href="#"
+                    href="sectors.html"
                     >Услуги</a
                   >
                 </li>
                 <li class="nav_menu_item">
                   <a
                     class="nav_menu_link"
-                    href="#"
+                    href="cases.html"
                     >Кейсы</a
                   >
                 </li>
-                <li class="nav_menu_item nav_menu_item-text">
+                <li class="nav_menu_item nav_menu_item-text" data-dropdown-trigger="clients">
                   <span
                     class="nav_menu_link nav_menu_link-text"
-                    href="#"
                     >Клиентам</span
                   >
                   <svg
@@ -147,22 +146,6 @@
                       fill="black"
                     />
                   </svg>
-                  <ul class="nav_submenu">
-                    <li class="nav_submenu_item">
-                      <a
-                        class="nav_submenu_link"
-                        href="#"
-                        >Пункт 1</a
-                      >
-                    </li>
-                    <li class="nav_submenu_item">
-                      <a
-                        class="nav_submenu_link"
-                        href="#"
-                        >Пункт 2</a
-                      >
-                    </li>
-                  </ul>
                 </li>
                 <li class="nav_menu_item">
                   <a
@@ -173,7 +156,7 @@
                 </li>
               </ul>
             </nav>
-            <button class="btn btn-prime">Связаться с нами</button>
+            <button class="btn btn-prime" data-fancybox data-src="#cb-form">Связаться с нами</button>
           </div>
           <div class="header_block header_block-mob">
             <a
@@ -200,6 +183,524 @@
           </div>
         </div>
       </header>
+
+      <ul class="nav_submenu dropdown" data-dropdown="clients">
+        <li class="nav_submenu_item">
+          <a
+            class="nav_submenu_link"
+            href="news.html"
+            >Акции</a
+          >
+        </li>
+        <li class="nav_submenu_item">
+          <a
+            class="nav_submenu_link"
+            href="news.html"
+            >Новости</a
+          >
+        </li>
+        <li class="nav_submenu_item">
+          <a
+            class="nav_submenu_link"
+            href="payment.html"
+            >Оплата</a
+          >
+        </li>
+        <li class="nav_submenu_item">
+          <a
+            class="nav_submenu_link"
+            href="faq.html"
+            >Частые вопросы</a
+          >
+        </li>
+        <li class="nav_submenu_item">
+          <a
+            class="nav_submenu_link"
+            href="rekvizity.html"
+            >Программа лояльности</a
+          >
+        </li>
+        <li class="nav_submenu_item">
+          <a
+            class="nav_submenu_link"
+            href="rekvizity.html"
+            >Документы</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown dropdown-fw" data-dropdown="banner">
+        <div class="dropdown_content container">
+          <div class="dropdown_menus">
+            <div class="dropdown_menu">
+              <div class="dropdown_menu_title">Секторы</div>
+              <ul class="nav_submenu">
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Акции</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Новости</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Оплата</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Частые вопросы</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Программа лояльности</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Документы</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown_menu">
+              <div class="dropdown_menu_title">Секторы</div>
+              <ul class="nav_submenu">
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Акции</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Новости</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Оплата</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Частые вопросы</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Программа лояльности</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Документы</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown_menu">
+              <div class="dropdown_menu_title">Секторы</div>
+              <ul class="nav_submenu">
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Акции</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Новости</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Оплата</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Частые вопросы</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Программа лояльности</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="#"
+                    >Документы</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="dropdown_banner">
+            <img src="assets/img/banner.jpg" alt="banner">
+          </a>
+        </div>
+      </div>
+
+      <div class="dropdown dropdown-fw" data-dropdown="filials">
+        <div class="dropdown_content dropdown_content-col container">
+          <div class="dropdown_header">
+            <div class="dropdown_header_title">
+              <span></span>
+              <p>Выбрать регион</p>
+            </div>
+            <div class="dropdown_search search_input">
+              <input type="text" placeholder="Ваш город..." data-search-trigger="desc">
+            </div>
+          </div>
+          <div class="dropdown_filials search" data-search="desc">
+            <div class="search_item" data-search-symbol="А">
+              <div class="search_symbol">А</div>
+              <ul class="search_list">
+                <li class="search_list_item"><a href="#" class="search_list_link">Архангельск</a></li>
+              </ul>
+            </div>
+            <div class="search_item" data-search-symbol="Б">
+              <div class="search_symbol">Б</div>
+              <ul class="search_list">
+                <li class="search_list_item"><a href="#" class="search_list_link">Барнаул</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Белгород</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Брянск</a></li>
+              </ul>
+            </div>
+            <div class="search_item" data-search-symbol="В">
+              <div class="search_symbol">В</div>
+              <ul class="search_list">
+                <li class="search_list_item"><a href="#" class="search_list_link">Владимир</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Волгоград</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Воронеж</a></li>
+              </ul>
+            </div>
+            <div class="search_item" data-search-symbol="Е">
+              <div class="search_symbol">Е</div>
+              <ul class="search_list">
+                <li class="search_list_item"><a href="#" class="search_list_link">Екатеринбург</a></li>
+              </ul>
+            </div>
+            <div class="search_item" data-search-symbol="И">
+              <div class="search_symbol">И</div>
+              <ul class="search_list">
+                <li class="search_list_item"><a href="#" class="search_list_link">Иркутск</a></li>
+              </ul>
+            </div>
+            <div class="search_item" data-search-symbol="К">
+              <div class="search_symbol">К</div>
+              <ul class="search_list">
+                <li class="search_list_item"><a href="#" class="search_list_link">Казань</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Калининград</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Калуга</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Кемерово</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Киров</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Краснодар</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Красноярск</a></li>
+              </ul>
+            </div>
+            <div class="search_item" data-search-symbol="Л">
+              <div class="search_symbol">Л</div>
+              <ul class="search_list">
+                <li class="search_list_item"><a href="#" class="search_list_link">Липецк</a></li>
+              </ul>
+            </div>
+            <div class="search_item" data-search-symbol="М">
+              <div class="search_symbol">М</div>
+              <ul class="search_list">
+                <li class="search_list_item"><a href="#" class="search_list_link">Москва</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Московская область</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Минеральные воды</a></li>
+              </ul>
+            </div>
+            <div class="search_item" data-search-symbol="Н">
+              <div class="search_symbol">Н</div>
+              <ul class="search_list">
+                <li class="search_list_item"><a href="#" class="search_list_link">Нижний новгород</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Новороссийск</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Новосибирск</a></li>
+              </ul>
+            </div>
+            <div class="search_item" data-search-symbol="О">
+              <div class="search_symbol">О</div>
+              <ul class="search_list">
+                <li class="search_list_item"><a href="#" class="search_list_link">Омск</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Оренбург</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Минеральные воды</a></li>
+              </ul>
+            </div>
+            <div class="search_item" data-search-symbol="П">
+              <div class="search_symbol">П</div>
+              <ul class="search_list">
+                <li class="search_list_item"><a href="#" class="search_list_link">Пенза</a></li>
+                <li class="search_list_item"><a href="#" class="search_list_link">Пермь</a></li>
+              </ul>
+            </div>
+            <div class="search_notFound">
+              <p>Ничего не найдено :(</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="drawer">
+        <ul class="drawer_menu">
+          <li class="drawer_menu_item"><a class="drawer_menu_link" href="about.html">О компании</a></li>
+          <li class="drawer_menu_item"><a class="drawer_menu_link" href="sectors.html">Секторы</a></li>
+          <li class="drawer_menu_item"><a class="drawer_menu_link" href="sectors.html">Услуги</a></li>
+          <li class="drawer_menu_item"><a class="drawer_menu_link" href="cases.html">Кейсы</a></li>
+          <li
+            class="drawer_menu_item collapsed collapsed-menu"
+          >
+            <div class="collapsed_head">
+              <div class="collapsed_title">Клиентам</div>
+              <span class="collapsed_status"></span>
+            </div>
+            <div class="collapsed_body">
+              <ul class="nav_submenu">
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="news.html"
+                    >Акции</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="news.html"
+                    >Новости</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="payment.html"
+                    >Оплата</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="faq.html"
+                    >Частые вопросы</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="news.html"
+                    >Программа лояльности</a
+                  >
+                </li>
+                <li class="nav_submenu_item">
+                  <a
+                    class="nav_submenu_link"
+                    href="rekvizity.html"
+                    >Документы</a
+                  >
+                </li>
+              </ul>
+            </div>   
+          </li>
+          <li class="drawer_menu_item"><a class="drawer_menu_link" href="contacts.html">Контакты</a></li>
+        </ul>
+        <div class="drawer_cb">
+          <button class="btn btn-second btn-fw" data-fancybox data-src="#cb-form">Связаться с нами</button>
+        </div>
+        <div
+          class="collapsed collapsed-search"
+        >
+          <div class="collapsed_head">
+            <div class="collapsed_icon">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_269_300)">
+                <path d="M7.9996 0.152344C4.75189 0.152344 2.10938 2.79486 2.10938 6.0429C2.10938 6.89012 2.28278 7.69902 2.62452 8.44733C4.09724 11.67 6.92085 15.0724 7.75137 16.0384C7.78216 16.0741 7.82029 16.1027 7.86315 16.1224C7.90602 16.142 7.95262 16.1522 7.99977 16.1522C8.04692 16.1522 8.09352 16.142 8.13638 16.1224C8.17925 16.1027 8.21738 16.0741 8.24817 16.0384C9.07836 15.0726 11.902 11.6703 13.3752 8.44733C13.7171 7.69902 13.8903 6.89012 13.8903 6.0429C13.89 2.79486 11.2475 0.152344 7.9996 0.152344ZM7.9996 9.10247C6.31254 9.10247 4.93987 7.7298 4.93987 6.04274C4.93987 4.35551 6.31254 2.98284 7.9996 2.98284C9.68667 2.98284 11.0593 4.35551 11.0593 6.04274C11.0595 7.7298 9.68683 9.10247 7.9996 9.10247Z" fill="#CA0800"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_269_300">
+                <rect width="16" height="16" fill="white" transform="translate(0 0.152344)"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="collapsed_title">Москва</div>
+            <span class="collapsed_status"></span>
+          </div>
+          <div class="collapsed_body">
+            <div class="search_wrapper">
+              <div class="search_input">
+                <input type="text" placeholder="Ваш город..." data-search-trigger="desc">
+              </div>
+              <div class="search">
+                <div class="search_item" data-search-symbol="М">
+                  <div class="search_symbol">М</div>
+                  <ul class="search_list">
+                    <li class="search_list_item"><a href="#" class="search_list_link">Москва</a></li>
+                    <li class="search_list_item"><a href="#" class="search_list_link">Московская область</a></li>
+                    <li class="search_list_item"><a href="#" class="search_list_link">Минеральные воды</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>   
+        </div>
+        <div class="drawer_contacts">
+          <div class="drawer_contacts_item">
+            <div class="drawer_contacts_item_title">Центральный офис</div>
+            <ul class="drawer_contacts_item_list">
+              <li class="drawer_contacts_item_phone"><a href="tel:+74951273851">+7 (495) 127-38-51</a></li>
+              <li class="drawer_contacts_item_hours"><span>9:00-19:00</span></li>
+            </ul>
+          </div>
+          <div class="drawer_contacts_item">
+            <div class="drawer_contacts_item_title">Электронная почта</div>
+            <ul class="drawer_contacts_item_list">
+              <li class="drawer_contacts_item_email"><a href="mailto:info@csat.ru">info@csat.ru</a></li>
+            </ul>
+          </div>
+          <div class="drawer_contacts_item">
+            <div class="drawer_contacts_item_title">Адрес</div>
+            <ul class="drawer_contacts_item_list">
+              <li class="drawer_contacts_item_address"><span>Москва, Тестовая, 31</span></li>
+            </ul>
+          </div>
+          <div class="drawer_contacts_item">
+            <div class="socials">
+              <a
+                href="#"
+                class="socials_item"
+                ><svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.65 12.713c-4.97 0-7.804-3.407-7.922-9.077h2.489c.082 4.162 1.917 5.924 3.37 6.287V3.636h2.345v3.59c1.435-.155 2.943-1.79 3.452-3.59h2.344c-.39 2.217-2.026 3.853-3.19 4.525 1.164.545 3.026 1.971 3.735 4.552h-2.58c-.554-1.727-1.935-3.062-3.761-3.244v3.244H8.65z"
+                    fill="#fff"
+                  /></svg
+              ></a>
+              <a
+                href="#"
+                class="socials_item"
+                ><svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M.99 7.11c3.865-1.806 6.443-2.997 7.733-3.572C12.405 1.895 13.17 1.61 13.669 1.6c.11-.002.355.027.514.166a.614.614 0 01.188.385c.018.11.04.363.023.56-.2 2.248-1.063 7.706-1.503 10.225-.185 1.065-.552 1.423-.906 1.458-.77.076-1.355-.546-2.1-1.07-1.167-.821-1.827-1.332-2.96-2.132-1.309-.926-.46-1.434.286-2.266C7.406 8.71 10.8 5.4 10.865 5.1c.008-.038.016-.178-.062-.252-.078-.074-.192-.048-.275-.028-.117.028-1.98 1.35-5.593 3.965-.529.39-1.008.58-1.437.57-.474-.011-1.385-.287-2.062-.524-.83-.29-1.49-.442-1.433-.934.03-.256.36-.518.987-.786z"
+                    fill="#fff"
+                  /></svg
+              ></a>
+              <a
+                href="#"
+                class="socials_item"
+                ><svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_44_140)">
+                    <path
+                      d="M8.002 0h-.004C3.587 0 0 3.588 0 8a7.94 7.94 0 001.523 4.689l-.997 2.972 3.075-.983A7.93 7.93 0 008.002 16C12.413 16 16 12.411 16 8s-3.587-8-7.998-8zm4.655 11.297c-.193.545-.959.997-1.57 1.129-.418.089-.964.16-2.802-.602-2.351-.974-3.865-3.363-3.983-3.518-.113-.155-.95-1.265-.95-2.413s.583-1.707.818-1.947c.193-.197.512-.287.818-.287.099 0 .188.005.268.009.235.01.353.024.508.395.193.465.663 1.613.719 1.731.057.118.114.278.034.433-.075.16-.141.231-.259.367-.118.136-.23.24-.348.386-.108.127-.23.263-.094.498.136.23.606.997 1.298 1.613.893.795 1.617 1.049 1.876 1.157.193.08.423.061.564-.089.179-.193.4-.513.625-.828.16-.226.362-.254.574-.174.216.075 1.359.64 1.594.757.235.118.39.174.447.273.056.099.056.564-.137 1.11z"
+                      fill="#fff"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_44_140">
+                      <path
+                        fill="#fff"
+                        d="M0 0h16v16H0z"
+                      />
+                    </clipPath>
+                  </defs></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup-cb" id="cb-form">
+        <div class="popup_content">
+          <div class="callback_title callback_title-light">
+            <h2>Связаться с нами</h2>
+            <p>
+              Напиши нам или позвоните по телефону<br/>
+              <a href="tel:+74951273851">+7 (495) 127-38-51</a>
+            </p>
+          </div>
+          <div class="callback_form callback_form">
+            <form class="form form-light" action="#" method="post" name="cb">
+              <div class="form_controls">
+                <div class="form_control">
+                  <input type="text" placeholder="Имя" name="name">
+                </div>
+                <div class="form_control">
+                  <input class="tel" type="text" placeholder="+7 (999) 999 99 99 *" name="phone" data-reqired>
+                </div>
+                <div class="form_control">
+                  <input type="email" placeholder="E-mail" name="email">
+                </div>
+                <div class="form_control">
+                  <textarea name="comment" placeholder="Собщение"></textarea>
+                </div>
+              </div>
+              <div class="form_actions">
+                <button type="submit" class="btn btn-prime btn-fw">Заказать звонок</button>
+              </div>
+            </form>
+            <div class="callback_notice callback_notice-light">
+              <p>Нажимая кнопку «Отправить», я подтверждаю согласие на обработку моих персональных данных
+                (закон №152-ФЗ «О персональных данных») и соглашаюсь с <a href="#">политикой конфиденциальности</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <main class="main main-contacts">
 
@@ -899,16 +1400,12 @@
                   </ul>
                 </div>
               </div>
-              <div class="information_widget  content_widget">
-                <div class="information_widget_icon">
-                  <svg width="60" height="53" viewBox="0 0 60 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M41.4375 13.4688L29.3438 1.65625C28.6875 1 27.6563 0.53125 26.625 0.53125H10.5C4.96875 0.53125 0.46875 5.03125 0.46875 10.5625V42.4375C0.46875 47.9688 4.96875 52.4688 10.5 52.4688H20.3438C19.5938 51.5312 19.125 50.3125 18.9375 49.0938H10.5C6.84375 49.0938 3.9375 46.0938 3.9375 42.5312V10.5625C3.9375 6.90625 6.9375 4 10.5 4H26.625C26.7188 4 26.8125 4 26.9063 4.09375L27 4.1875V9.53125C27.0938 10.1875 27.2813 10.9375 27.5625 11.5938C28.6875 14.0312 31.0313 15.8125 33.75 16.1875C34.0313 16.1875 34.4063 16.2812 34.6875 16.2812L39.2813 16.4688C39.375 16.6562 39.375 16.75 39.375 16.9375V30.3438H42.75V16.75C42.8438 15.5312 42.2813 14.3125 41.4375 13.4688Z" fill="#CA0800"/>
-                    <path d="M32.4375 40.1875C32.5312 40.375 32.625 40.5625 32.625 40.8438C32.625 41.4063 32.4375 41.7812 32.0625 42.0625C31.6875 42.25 31.125 42.3438 30.2812 42.3438H29.5312V39.4375H30.375C30.6563 39.4375 31.0312 39.4375 31.2187 39.5313C31.5 39.625 31.6875 39.625 31.875 39.7187C32.1562 39.9062 32.3437 40 32.4375 40.1875Z" fill="#CA0800"/>
-                    <path d="M42.1875 40.2813C41.625 39.7188 40.875 39.4375 39.75 39.4375H38.8125V45.7188H39.6562C40.7812 45.7188 41.625 45.4375 42.1875 44.875C42.75 44.3125 43.0313 43.5625 43.0313 42.5312C43.0313 41.5937 42.75 40.8438 42.1875 40.2813ZM42.1875 40.2813C41.625 39.7188 40.875 39.4375 39.75 39.4375H38.8125V45.7188H39.6562C40.7812 45.7188 41.625 45.4375 42.1875 44.875C42.75 44.3125 43.0313 43.5625 43.0313 42.5312C43.0313 41.5937 42.75 40.8438 42.1875 40.2813ZM55.2188 32.875H25.9688C23.625 32.875 21.6562 34.75 21.6562 37.1875V48.1562C21.6562 50.5 23.5313 52.4688 25.9688 52.4688H55.2188C57.5625 52.4688 59.5313 50.5 59.5313 48.1562V37.1875C59.5313 34.8438 57.5625 32.875 55.2188 32.875ZM33.75 43.5625C32.9062 44.125 31.7812 44.4062 30.2812 44.4062H29.5312V46.6563C29.5312 47.3125 29.0625 47.7813 28.4062 47.7813C27.75 47.7813 27.2813 47.3125 27.2813 46.6563V38.3125C27.2813 38.125 27.4688 37.9375 27.6562 37.9375C28.0312 37.8438 28.4062 37.8437 28.875 37.8437C29.4375 37.8437 29.9062 37.75 30.2812 37.75C31.7812 37.75 32.9062 38.0312 33.75 38.5C34.5938 39.0625 34.9688 39.9063 34.9688 41.0313C34.875 42.1563 34.5 43 33.75 43.5625ZM44.9063 44.9688C44.625 45.625 44.25 46.1875 43.7813 46.5625C43.3125 46.9375 42.6562 47.3125 42 47.5C41.25 47.6875 40.5 47.7813 39.5625 47.7813C39.1875 47.7813 38.7188 47.7812 38.1563 47.6875C37.6875 47.6875 37.3125 47.5938 36.9375 47.5C36.75 47.5 36.5625 47.3125 36.5625 47.125V38.125C36.5625 37.9375 36.75 37.75 36.9375 37.75C37.3125 37.6563 37.7812 37.6563 38.25 37.6563C38.8125 37.6563 39.2812 37.5625 39.6562 37.5625C40.5 37.5625 41.25 37.6562 42 37.8437C42.6562 38.0312 43.3125 38.3125 43.7813 38.7812C44.25 39.1562 44.625 39.7188 44.9063 40.375C45.1875 41.0312 45.2812 41.7812 45.2812 42.7188C45.2812 43.5625 45.1875 44.3125 44.9063 44.9688ZM52.875 39.5313H49.4063V41.5937H52.4063C52.9688 41.5937 53.3438 41.9687 53.3438 42.5312C53.3438 43.0937 52.875 43.4687 52.4063 43.4687H49.4063V46.4688C49.4063 47.125 48.9375 47.5938 48.2813 47.5938C47.625 47.5938 47.1562 47.125 47.1562 46.4688V38.0312C47.1562 37.8438 47.3438 37.6563 47.5313 37.6563H52.875C53.4375 37.6563 53.8125 38.125 53.8125 38.5938C53.8125 39.1563 53.4375 39.5313 52.875 39.5313ZM39.75 39.5313H38.8125V45.8125H39.6562C40.7812 45.8125 41.625 45.5313 42.1875 44.9688C42.75 44.4063 43.0313 43.6563 43.0313 42.625C43.0313 41.5938 42.75 40.75 42.2812 40.2813C41.7188 39.7188 40.875 39.5313 39.75 39.5313Z" fill="#CA0800"/>
-                    </svg>
+              <div class="sidebar">
+                <div class="widget">
+                  <div class="widget_icon information_widget_icon"></div>
+                  <div class="widget_title">Скачать реквизиты</div>
+                  <a href="#" download class="btn btn-prime btn-fw">Скачать</a>
                 </div>
-                <div class="information_widget_text">Скачать реквизиты</div>
-                <a href="#" download class="btn btn-prime btn-fw">Скачать</a>
               </div>
             </div>
           </div>
@@ -932,7 +1429,7 @@
                     <input type="text" placeholder="Имя" name="name">
                   </div>
                   <div class="form_control">
-                    <input type="text" placeholder="+7 (999) 999 99 99" name="phone">
+                    <input class="tel" type="text" placeholder="+7 (999) 999 99 99 *" name="phone" data-reqired>
                   </div>
                   <div class="form_control">
                     <input type="email" placeholder="E-mail" name="email">

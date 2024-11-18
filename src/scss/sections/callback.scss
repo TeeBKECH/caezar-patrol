@@ -40,6 +40,16 @@
         text-decoration: underline;
       }
     }
+
+    &-light {
+      h2 {
+        color: #373940;
+      }
+
+      p {
+        color: #5b5d68;
+      }
+    }
   }
 
   &_form {
@@ -61,6 +71,12 @@
     a {
       color: inherit;
       text-decoration: underline;
+    }
+
+    &-light {
+      p {
+        color: #5b5d68;
+      }
     }
   }
 }

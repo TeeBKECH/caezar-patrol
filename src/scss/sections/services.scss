@@ -38,6 +38,10 @@
       padding: 20px;
     }
 
+    &:hover {
+      box-shadow: 0 0 4px rgba(#000, 0.19);
+    }
+
     &_icon {
       width: 60px;
       height: 60px;
@@ -58,7 +62,7 @@
 
     &_title {
       color: #373940;
-      font-size: clamp(20px, 3vw, 24px);
+      font-size: clamp(18px, 3vw, 24px);
       line-height: 1.15;
       font-weight: 700;
       margin-bottom: 32px;
@@ -113,12 +117,6 @@
           path {
             fill: #11ab47;
           }
-        }
-      }
-
-      #{$service}_title {
-        @include maxWidth(768px) {
-          margin-bottom: 16px;
         }
       }
     }

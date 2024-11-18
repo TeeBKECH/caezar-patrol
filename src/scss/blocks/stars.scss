@@ -4,11 +4,22 @@
   justify-content: flex-start;
   gap: 8px;
 
-  span {
+  &_item {
     display: block;
     content: '';
     width: 16px;
     height: 16px;
     background: url(../img/svg/star.svg) no-repeat;
+    background-size: contain;
+
+    &-type2 {
+      width: 24px;
+      height: 24px;
+
+      @include maxWidth(768px) {
+        width: 16px;
+        height: 16px;
+      }
+    }
   }
 }

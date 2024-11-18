@@ -3,6 +3,7 @@
 @import '_mixins';
 @import '_reset';
 @import '../../node_modules/swiper/swiper.min.css';
+@import '../../node_modules/@fancyapps/ui/dist/fancybox.css';
 
 html,
 body {
@@ -16,6 +17,10 @@ html {
 body {
   font-family: 'Exo 2', sans-serif;
   // font-optical-sizing: auto;
+
+  &.noscroll {
+    overflow-y: hidden;
+  }
 }
 
 /*------------------ BLOCKS ------------------*/
@@ -38,6 +43,17 @@ body {
 @import 'blocks/show-more';
 @import 'blocks/content';
 @import 'blocks/form';
+@import 'blocks/pagination';
+@import 'blocks/icn';
+@import 'blocks/list';
+@import 'blocks/sidebar';
+@import 'blocks/widget';
+@import 'blocks/collapsed';
+@import 'blocks/filters';
+@import 'blocks/dropdown';
+@import 'blocks/search';
+@import 'blocks/drawer';
+@import 'blocks/popup';
 
 /*------------------ PAGES ------------------*/
 @import 'pages/page';
@@ -63,3 +79,8 @@ body {
 @import 'sections/map';
 @import 'sections/information';
 @import 'sections/callback';
+@import 'sections/security';
+@import 'sections/serv';
+@import 'sections/review';
+@import 'sections/thumbnail';
+@import 'sections/new';

@@ -30,11 +30,29 @@
       }
     }
 
+    h3 {
+      font-size: clamp(20px, 3vw, 32px);
+      font-weight: 700;
+      color: #000;
+      line-height: 1.2;
+
+      @include maxWidth(768px) {
+        line-height: 1.2;
+      }
+    }
+
     p {
       font-size: clamp(14px, 3vw, 20px);
       color: #5b5d68;
       font-weight: 550;
       line-height: 1.4;
+    }
+  }
+
+  &-italic {
+    h2,
+    h3 {
+      font-style: italic;
     }
   }
 

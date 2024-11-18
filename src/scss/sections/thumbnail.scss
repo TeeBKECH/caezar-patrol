@@ -1,0 +1,29 @@
+.thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_box {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+
+    @include maxWidth(991px) {
+      height: 400px;
+    }
+
+    @include maxWidth(576px) {
+      height: 280px;
+    }
+  }
+
+  &_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include maxWidth(576px) {
+      object-position: right;
+    }
+  }
+}

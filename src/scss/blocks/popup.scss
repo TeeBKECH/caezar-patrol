@@ -1,0 +1,40 @@
+.popup {
+  padding: 120px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #e2e4ef;
+  width: 100%;
+  max-width: 800px;
+  display: none;
+  position: relative;
+
+  @include maxWidth(991px) {
+    padding: 48px 20px;
+  }
+
+  .carousel__button.is-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 2;
+    color: #ff9b97;
+    width: 16px;
+    height: 16px;
+
+    @include maxWidth(991px) {
+      top: 24px;
+      right: 24px;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

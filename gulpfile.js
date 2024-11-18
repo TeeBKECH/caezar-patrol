@@ -110,7 +110,7 @@ function scripts() {
   return (
     src([
       'node_modules/swiper/swiper-bundle.min.js',
-      // 'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
+      'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
       path.src.js,
     ])
       .pipe(

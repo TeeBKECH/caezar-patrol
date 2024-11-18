@@ -205,4 +205,236 @@
       }
     }
   }
+
+  &-about {
+    gap: 100px;
+
+    @include maxWidth(991px) {
+      gap: 40px;
+    }
+
+    .seo,
+    .difference,
+    .about,
+    .nums,
+    .geography,
+    .clients,
+    .reviews {
+      margin-bottom: 60px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .faq {
+      margin-bottom: 235px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 120px;
+      }
+    }
+  }
+
+  &-info {
+    background: #f1f1f1;
+    .information {
+      margin-bottom: 102px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &-object {
+    gap: 100px;
+
+    @include maxWidth(991px) {
+      gap: 40px;
+    }
+
+    .about {
+      margin-bottom: 0;
+    }
+
+    .security,
+    .about-type2,
+    .seo,
+    .cta:not(.cta-large),
+    .faq,
+    .clients,
+    .reviews,
+    .difference {
+      margin-bottom: 60px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .nums {
+    }
+
+    .serv {
+      margin-bottom: 30px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-reviews {
+    gap: 48px;
+
+    @include maxWidth(991px) {
+      gap: 40px;
+    }
+
+    .reviews {
+      margin-bottom: 40px;
+    }
+  }
+
+  &-review {
+    gap: 100px;
+
+    @include maxWidth(991px) {
+      gap: 40px;
+    }
+
+    .reviews {
+      margin-bottom: 100px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &-news {
+    gap: 60px;
+
+    @include maxWidth(991px) {
+      gap: 40px;
+    }
+
+    .news {
+      margin-bottom: 115px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &-new {
+    .thumbnail {
+      margin-bottom: 60px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .new {
+      margin-bottom: 80px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .news {
+      margin-bottom: 140px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &-case {
+    .thumbnail,
+    .new {
+      margin-bottom: 80px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .news {
+      margin-bottom: 140px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &-cases {
+    gap: 80px;
+
+    @include maxWidth(991px) {
+      gap: 40px;
+    }
+
+    .news {
+      margin-bottom: 130px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .clients {
+      margin-bottom: 140px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &-faq {
+    .intro {
+      margin-bottom: 48px;
+    }
+
+    .faq {
+      margin-bottom: 130px;
+
+      @include maxWidth(991px) {
+        gap: 60px;
+      }
+    }
+  }
+
+  &-tipical {
+    .intro {
+      margin-bottom: 60px;
+
+      @include maxWidth(991px) {
+        gap: 40px;
+      }
+    }
+
+    .new {
+      margin-bottom: 100px;
+
+      @include maxWidth(991px) {
+        gap: 40px;
+      }
+    }
+
+    .faq {
+      margin-bottom: 150px;
+
+      @include maxWidth(991px) {
+        gap: 60px;
+      }
+    }
+  }
 }
