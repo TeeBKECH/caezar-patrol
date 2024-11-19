@@ -211,4 +211,31 @@
       }
     }
   }
+
+  &-big {
+    #{$collapsed}_head {
+      grid-template-columns: 32px 1fr 14px;
+    }
+
+    #{$collapsed}_icon {
+      margin-bottom: 0;
+    }
+
+    #{$collapsed}_title {
+      margin-bottom: 0;
+    }
+
+    &.open {
+      #{$collapsed}_body {
+        padding: 0 24px 24px 64px;
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+      }
+
+      #{$collapsed}_content {
+        padding: 0;
+      }
+    }
+  }
 }

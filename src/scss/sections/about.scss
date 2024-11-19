@@ -115,6 +115,12 @@
     &_block {
       display: none;
       padding: 0;
+      max-width: 600px;
+      width: 100%;
+
+      iframe {
+        width: 100% !important;
+      }
     }
   }
 }
