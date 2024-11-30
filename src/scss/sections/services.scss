@@ -4,7 +4,7 @@
   &_items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 425px auto;
     gap: 40px;
 
     @include maxWidth(1400px) {
@@ -95,6 +95,10 @@
         gap: 16px;
       }
 
+      &-col {
+        flex-direction: column;
+      }
+
       li {
         font-size: clamp(15px, 3vw, 18px);
       }
@@ -109,13 +113,15 @@
     }
 
     &-action {
-      border: 2px solid #11ab47;
+      border: 2px solid #ffc724;
+      background: #ffc724;
+      cursor: default;
       #{$service}_icon {
         svg {
-          fill: #11ab47;
+          fill: #373940;
 
           path {
-            fill: #11ab47;
+            fill: #373940;
           }
         }
       }
@@ -158,49 +164,6 @@
         grid-column-end: unset;
         grid-row-start: unset;
         grid-row-end: unset;
-      }
-    }
-
-    &-collapsed {
-      @include maxWidth(768px) {
-        display: grid;
-        grid-template-columns: 32px 1fr 14px;
-        align-items: center;
-        gap: 0 10px;
-      }
-
-      #{$service}_icon,
-      #{$service}_title {
-        @include maxWidth(768px) {
-          margin: 0;
-        }
-      }
-
-      #{$service}_title + svg {
-        display: none;
-        @include maxWidth(768px) {
-          display: block;
-        }
-      }
-
-      #{$service}_list {
-        @include maxWidth(768px) {
-          transition: all 0.1s linear;
-          opacity: 0;
-          visibility: hidden;
-          height: 0;
-          grid-column-start: 1;
-          grid-column-end: 4;
-        }
-      }
-
-      &.open {
-        #{$service}_list {
-          opacity: 1;
-          visibility: visible;
-          height: auto;
-          padding-top: 16px;
-        }
       }
     }
   }

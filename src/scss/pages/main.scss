@@ -3,6 +3,7 @@
   flex-direction: column;
 
   &-index {
+    overflow-x: hidden;
     gap: 100px;
 
     @include maxWidth(991px) {

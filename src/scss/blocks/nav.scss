@@ -1,4 +1,8 @@
 .nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
   &_menu {
     display: flex;
     align-items: center;

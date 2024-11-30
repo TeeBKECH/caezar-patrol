@@ -1,35 +1,142 @@
-const geoItems = document.querySelectorAll('[data-code]')
-const geoLink = document.querySelector('.ru-map_link')
-if (geoItems?.length > 0 && geoLink) {
-  let timer
-  geoItems.forEach((item) => {
-    if (item.getAttribute('data-has-link')) {
-      let showedFlag = false
-      item.addEventListener('mouseenter', function (e) {
-        clearTimeout(timer)
-        showedFlag = true
-        geoLink.setAttribute('href', item.getAttribute('data-has-link'))
-        geoLink.setAttribute('style', `left: ${e.clientX}px; top: ${e.clientY}px`)
-        geoLink.classList.add('show')
-        geoLink.innerText = e.currentTarget.getAttribute('data-title')
-      })
-      item.addEventListener('mouseleave', function (e) {
-        showedFlag = false
-        timer = setTimeout(() => {
-          if (!showedFlag) {
-            console.log(showedFlag)
-            geoLink.classList.remove('show')
-          }
-        }, 3000)
-        // geoLink.setAttribute('href', item.getAttribute('data-has-link'))
-        // geoLink.setAttribute('style', `left: ${e.clientX}px; top: ${e.clientY}px`)
-        // geoLink.innerText = e.currentTarget.getAttribute('data-title')
-      })
-    }
-  })
+const geoFilials = [
+  {
+    name: 'central',
+    title: 'ЦФО:',
+    links: [
+      {
+        name: 'Москва',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'Воронеж',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'Ярославль',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'Рязань',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'Липецк',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'Москва',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'Воронеж',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'Ярославль',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'Рязань',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'Липецк',
+        url: '/geo/moscow',
+      },
+    ],
+  },
+  {
+    name: 'urals',
+    title: 'УФО:',
+    links: [
+      {
+        name: 'ЕКБ',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'Воронеж',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'ЕКБ',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'Рязань',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'ЕКБ',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'Москва',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'ЕКБ',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'Ярославль',
+        url: '/geo/moscow',
+      },
+      {
+        name: 'ЕКБ',
+        url: '/geo/moscow',
+      },
+    ],
+  },
+]
 
-  window.addEventListener('scroll', () => {
-    geoLink.classList.remove('show')
+const geoItems = document.querySelectorAll('[data-fd]')
+const geoContent = document.querySelector('.ru-map_content')
+if (geoItems?.length > 0 && geoContent) {
+  // let timer
+  const generateGeoContent = (obj) => {
+    geoContent.innerHTML = null
+
+    let title = document.createElement('div')
+    let list = document.createElement('div')
+    geoContent.appendChild(title)
+    geoContent.appendChild(list)
+    for (i = 0; i < obj.links.length; i++) {
+      let link = document.createElement('a')
+      list.appendChild(link)
+      link.setAttribute('href', obj.links[i].url)
+      link.innerText = obj.links[i].name
+    }
+    title.classList.add('ru-map_content_title')
+    list.classList.add('ru-map_content_list')
+    title.innerHTML = obj.title
+  }
+  geoItems.forEach((geoPath) => {
+    const filial = geoFilials.find((item) => item.name === geoPath.getAttribute('data-fd'))
+    if (filial) {
+      geoPath.classList.add('show')
+      geoPath.addEventListener('mouseenter', (e) => {
+        console.log(e.currentTarget.getBoundingClientRect())
+
+        geoContent.setAttribute(
+          'style',
+          `left: ${
+            e.currentTarget.getBoundingClientRect().left +
+            e.currentTarget.getBoundingClientRect().width / 2
+          }px; top: ${
+            e.currentTarget.getBoundingClientRect().top +
+            e.currentTarget.getBoundingClientRect().height / 2
+          }px`,
+        )
+        geoContent.classList.add('show')
+        generateGeoContent(filial)
+      })
+      window.addEventListener('scroll', () => {
+        geoContent.classList.remove('show')
+      })
+      // geoPath.addEventListener('click', (e) => {
+      //   geoContent.classList.remove('show')
+      // })
+    }
   })
 }
 
@@ -138,6 +245,32 @@ if (accordions.length > 0) {
 }
 
 // Collapsed Items
+const searchigObjects = [
+  {
+    title: 'Складские комплексы',
+    url: '/objects/1',
+  },
+  {
+    title: 'Строительные обьекты',
+    url: '/objects/1',
+  },
+  {
+    title: 'Промышленность',
+    url: '/objects/1',
+  },
+  {
+    title: 'Массовые мероприятия',
+    url: '/objects/1',
+  },
+  {
+    title: 'Бизнес-центры',
+    url: '/objects/1',
+  },
+  {
+    title: 'Бизнес не центры',
+    url: '/objects/1',
+  },
+]
 const collapsedItems = document.querySelectorAll('.collapsed')
 if (collapsedItems?.length > 0) {
   collapsedItems.forEach((el) => {
@@ -148,6 +281,32 @@ if (collapsedItems?.length > 0) {
         el.classList.toggle('open')
       }
     })
+    if (el.classList.contains('collapsed-hasSearch')) {
+      const input = el.querySelector('.collapsed_search_input')
+      const list = el.querySelector('.collapsed_body-searching ul')
+      let currList = []
+      list.innerHTML = null
+      input.addEventListener('input', (e) => {
+        if (e.target.value === '') {
+          currList = []
+          list.innerHTML = null
+          el.classList.remove('searching')
+          return
+        }
+        el.classList.add('searching')
+        currList = searchigObjects
+          .filter((obj) => obj.title.toLowerCase().includes(e.target.value.toLowerCase()))
+          .map((obj) => {
+            return `<li><a href='${obj.url}'>${obj.title}</a></li>`
+          })
+
+        if (currList.length === 0) {
+          list.innerHTML = `<li>Не найдено</li>`
+          return
+        }
+        list.innerHTML = currList.splice(0, 4).join('')
+      })
+    }
   })
 }
 
@@ -217,33 +376,49 @@ if (dropDowns?.length > 0 && dropDownsTriggers?.length > 0) {
       (dropdown) =>
         trigger.getAttribute('data-dropdown-trigger') === dropdown.getAttribute('data-dropdown'),
     )
-    trigger.addEventListener('mouseenter', (e) => {
-      dropDownFlag = true
-      clearTimeout(timeout)
-      curDropdown.classList.add('show')
-    })
+    if (trigger.getAttribute('data-dropdown-type') === 'click') {
+      trigger.addEventListener('click', (e) => {
+        dropDownFlag = true
+        clearTimeout(timeout)
+        curDropdown.classList.toggle('show')
+      })
+      curDropdown.addEventListener('mouseleave', (e) => {
+        dropDownFlag = false
+        if (!dropDownFlag) {
+          timeout = setTimeout(() => {
+            curDropdown.classList.remove('show')
+          }, 50)
+        }
+      })
+    } else {
+      trigger.addEventListener('mouseenter', (e) => {
+        dropDownFlag = true
+        clearTimeout(timeout)
+        curDropdown.classList.add('show')
+      })
 
-    trigger.addEventListener('mouseleave', (e) => {
-      dropDownFlag = false
-      if (!dropDownFlag) {
-        timeout = setTimeout(() => {
-          curDropdown.classList.remove('show')
-        }, 400)
-      }
-    })
-    curDropdown.addEventListener('mouseenter', (e) => {
-      dropDownFlag = true
-      clearTimeout(timeout)
-      e.currentTarget.classList.add('show')
-    })
-    curDropdown.addEventListener('mouseleave', (e) => {
-      dropDownFlag = false
-      if (!dropDownFlag) {
-        timeout = setTimeout(() => {
-          curDropdown.classList.remove('show')
-        }, 50)
-      }
-    })
+      trigger.addEventListener('mouseleave', (e) => {
+        dropDownFlag = false
+        if (!dropDownFlag) {
+          timeout = setTimeout(() => {
+            curDropdown.classList.remove('show')
+          }, 400)
+        }
+      })
+      curDropdown.addEventListener('mouseenter', (e) => {
+        dropDownFlag = true
+        clearTimeout(timeout)
+        e.currentTarget.classList.add('show')
+      })
+      curDropdown.addEventListener('mouseleave', (e) => {
+        dropDownFlag = false
+        if (!dropDownFlag) {
+          timeout = setTimeout(() => {
+            curDropdown.classList.remove('show')
+          }, 50)
+        }
+      })
+    }
   })
 }
 
@@ -256,29 +431,80 @@ if (searchInputs?.length > 0 && searchResults?.length > 0) {
       (result) => search.getAttribute('data-search-trigger') === result.getAttribute('data-search'),
     )
     if (curResult) {
-      const resultItems = curResult.querySelectorAll('.search_item')
       let founded = false
-      search.addEventListener('input', (e) => {
-        founded = false
-        resultItems.forEach((el) => {
-          el.classList.add('hide')
-          if (e.currentTarget.value === '') {
-            curResult.classList.remove('notFound')
-            el.classList.remove('hide')
-            founded = true
-          } else if (
-            el.getAttribute('data-search-symbol').toLowerCase() ===
-            e.currentTarget.value.toLowerCase()[0]
-          ) {
-            el.classList.remove('hide')
-            curResult.classList.remove('notFound')
-            founded = true
+      if (curResult.getAttribute('data-search') !== 'search-site') {
+        const resultItems = curResult.querySelectorAll('.search_item')
+        search.addEventListener('input', (e) => {
+          founded = false
+          resultItems.forEach((el) => {
+            el.classList.add('hide')
+            if (e.currentTarget.value === '') {
+              curResult.classList.remove('notFound')
+              el.classList.remove('hide')
+              founded = true
+            } else if (
+              el.getAttribute('data-search-symbol').toLowerCase() ===
+              e.currentTarget.value.toLowerCase()[0]
+            ) {
+              el.classList.remove('hide')
+              curResult.classList.remove('notFound')
+              founded = true
+            }
+          })
+          if (!founded) {
+            curResult.classList.add('notFound')
           }
         })
-        if (!founded) {
-          curResult.classList.add('notFound')
-        }
-      })
+      } else {
+        const siteSearchitems = [
+          {
+            title: 'Контроль доступа и охрана офисных и торговых центров 1',
+            url: '/objects/1',
+          },
+          {
+            title: 'Охрана офисных и торговых центров 2',
+            url: '/objects/2',
+          },
+          {
+            title: 'Торговых центров 2',
+            url: '/objects/1',
+          },
+          {
+            title: 'Полет на луну',
+            url: '/objects/1',
+          },
+          {
+            title: 'Бизнес-центры',
+            url: '/objects/1',
+          },
+          {
+            title: 'Бизнес не центры',
+            url: '/objects/1',
+          },
+        ]
+        const resultItems = curResult.querySelector('.search_list')
+        let currList = []
+        resultItems.innerHTML = null
+        search.addEventListener('input', (e) => {
+          if (e.target.value === '') {
+            curResult.classList.add('notFound')
+            resultItems.innerHTML = null
+            return
+          }
+          curResult.classList.remove('notFound')
+          currList = siteSearchitems
+            .filter((obj) => obj.title.toLowerCase().includes(e.target.value.toLowerCase()))
+            .map((obj) => {
+              return `<li class="search_list_item search_list_item-v2"><a class="search_list_link" href='${obj.url}'>${obj.title}</a></li>`
+            })
+          if (currList.length === 0) {
+            curResult.classList.add('notFound')
+            resultItems.innerHTML = null
+            return
+          }
+          resultItems.innerHTML = currList.splice(0, 3).join('')
+        })
+      }
     }
   })
 }
@@ -329,12 +555,9 @@ counters.forEach((counter) => {
 
 // Forms
 const forms = document.querySelectorAll('.form')
-console.log(forms)
 
 if (forms?.length > 0) {
   forms.forEach((form) => {
-    console.log(form)
-
     form.addEventListener('submit', (e) => {
       e.preventDefault()
     })

@@ -42,7 +42,7 @@
               <span class="logo_text">Цезарь<br />Патруль</span>
             </a>
             <div class="filials">
-              <div class="filials_item" data-dropdown-trigger="filials" data-dropdown-type="click">
+              <div class="filials_item" data-dropdown-trigger="filials">
                 <svg
                   width="17"
                   height="16"
@@ -155,6 +155,7 @@
                   >
                 </li>
               </ul>
+              <button class="search_trigger" data-dropdown-trigger="search" data-dropdown-type="click"></button>
             </nav>
             <button class="btn btn-prime" data-fancybox data-src="#cb-form">Связаться с нами</button>
           </div>
@@ -475,6 +476,29 @@
                 <li class="search_list_item"><a href="#" class="search_list_link">Пермь</a></li>
               </ul>
             </div>
+            <div class="search_notFound">
+              <p>Ничего не найдено :(</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown dropdown-fw" data-dropdown="search">
+        <div class="dropdown_content dropdown_content-col container">
+          <div class="dropdown_header">
+            <div class="dropdown_header_title">
+              <p>Поиск по сайту</p>
+            </div>
+            <div class="dropdown_search search_input">
+              <input type="text" placeholder="Найти..." data-search-trigger="search-site">
+            </div>
+          </div>
+          <div class="dropdown_search search" data-search="search-site">
+            <ul class="search_list">
+              <!-- <li class="search_list_item search_list_item-v2">
+                <a href="#" class="search_list_link">Контроль доступа и охрана офисных и торговых центров</a>
+              </li> -->
+            </ul>
             <div class="search_notFound">
               <p>Ничего не найдено :(</p>
             </div>
