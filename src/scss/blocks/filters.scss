@@ -4,4 +4,18 @@
   gap: 12px;
   flex-wrap: wrap;
   padding-bottom: 12px;
+
+  &-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+
+    @include maxWidth(991px) {
+      gap: 8px;
+    }
+
+    @include maxWidth(768px) {
+      padding-right: 20px;
+    }
+  }
 }

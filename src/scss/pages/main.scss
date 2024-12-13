@@ -438,4 +438,22 @@
       }
     }
   }
+
+  &-docs {
+    .intro {
+      margin-bottom: 60px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 24px;
+      }
+    }
+
+    .docs {
+      margin-bottom: 151px;
+
+      @include maxWidth(991px) {
+        margin-bottom: 68px;
+      }
+    }
+  }
 }

@@ -2,9 +2,6 @@
   display: flex;
   width: 100%;
 
-  &-section {
-  }
-
   &-hasActions {
     justify-content: space-between;
     align-items: center;
@@ -63,6 +60,19 @@
 
     @include maxWidth(991px) {
       display: none;
+    }
+  }
+
+  &-article {
+    h3 {
+      font-size: clamp(24px, 3vw, 40px);
+      font-weight: 700;
+      color: #000;
+      line-height: 1.2;
+
+      @include maxWidth(768px) {
+        line-height: 1.3;
+      }
     }
   }
 }
